@@ -1,0 +1,48 @@
+{
+    "version": {
+        "format": 1,
+        "semantics": 7
+    },
+    "news_id": 40003,
+    "published_at": 1603832400,
+    "pickup_limit": 1209600,
+    "priority": 100,
+    "deletion_priority": 100,
+    "language": "en-GB",
+    "supported_languages": [
+        "en-GB",
+        "fr",
+        "de",
+        "it",
+        "es",
+        "nl",
+        "pt",
+        "ru"
+    ],
+    "display_type": "NORMAL",
+    "topic_id": "nx_news_ef0b489c33b4d90a",
+    "topic_important": 0,
+    "no_photography": 0,
+    "surprise": 0,
+    "bashotorya": 0,
+    "movie": 0,
+    "subject": {
+        "caption": 1,
+        "text": "hekate - CTCaer mod v5.3.4 & Nyx v0.9.5"
+    },
+    "topic_name": "Hekate",
+    "topic_image": "file://topic_image.jpg",
+    "topic_publisher": "CTCaer",
+    "topic_description": "hekate - A GUI based Nintendo Switch Bootloader",
+    "list_image": "file://list_image.jpg",
+    "footer": {
+        "text": "hekate - A GUI based Nintendo Switch Bootloader"
+    },
+    "body": [
+        {
+            "text": "This version supports booting ALL current CFWs, Android/Linux booting and payload tools.\nNo more SD card removals\n<strong>Latest HOS supported: 10.2.0</strong>\n<header>New in this version</header>\n\n\uE016 Mesosphere support (Atmosphère's kernel reimplementation)\n\uE016 update.bin is now automatically created on first boot\nThis allows l4t/android or anything else that injects/warmboots an old hekate to always use the latest one\nAs a reminder, it gets automatically updated via injecting a new hekate once\nBootloader protection\nCurrently can only be enabled via editing hekate_ipl.ini.\nUsing bootprotect=1 in [config] disallows any reading/writing of the bootloader folder and its contents inside HOS, preventing any corruption of it.\nThis of course has the side-effect of homebrew that depend on it (e.g. hekate Toolbox) to not work fully.\n\uE016 Fix an issue where failing to patch emuMMC would allow user to continue booting\n\uE016 Some extra fixes.\n\n<header>Nyx v0.9.5</header>\n\n\uE016 Better info for BM92T36 (USB-PD)\nIt can now show more profiles and the exact selected profile\n\uE016 Add joycon disable.\nFor now it can only be enabled by editing nyx.ini. jcdisable=1.\n\n<header>FAQ</header>\n\n\uE016 How to use Partition Manager for Linux/Android?\nFor L4T Linux you can use the official Ubuntu Bionic 3.2.0 or newer release or any other distro betas.\nFor android you need to build Android P or Q which support/require the new partition scheme.\n\n\uE016 My Joy-Con drift when in Nyx, how to fix?\nNyx applies an auto calibration at boot. That happens when you hear the rumble. If you press the sticks before, then a wrong calibration will get applied.\nTo fix that on the fly, simply remove the Joy-Con and re insert it. This always causes a new calibration. Just make sure you don't touch the stick when you reinsert.\n\n\uE016 I don't care about emuMMC/Linux/Android. Can the Part manager be used for something else?\nYes. You can still reformat your SD card to a single FAT32 partition.\nYou can even use it when you have exFAT and you want to format to FAT32.\nIt is also suggested to format your sd card via hekate. That's because it prepares it for performance. something that many partitioning tools neglect.\n",
+            "main_image_height": 240,
+            "main_image": "file://main_image.jpg"
+        }
+    ]
+}
